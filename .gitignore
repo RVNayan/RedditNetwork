@@ -2,3 +2,7 @@ logs/
 data/archived_submissions/
 output/
 scripts/__pycache__/
+TO_DOWNLOAD/
+output
+redits.csv
+reddit_list.csv
