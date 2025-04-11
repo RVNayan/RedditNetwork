@@ -197,7 +197,7 @@ def update_subreddit_data(
                 continue
 
             year = created.year
-            year_key = f"post_in_year_{year}"
+            year_key = f"posts_{year}"
 
             if user not in subreddit_data[subreddit_name]:
                 subreddit_data[subreddit_name][user] = {
@@ -274,7 +274,7 @@ if __name__ == "__main__":
     sublists = subreddits[0].tolist()
 
     from_date = datetime.strptime("2019-01-01", "%Y-%m-%d")
-    to_date = datetime.strptime("2023-12-31", "%Y-%m-%d")
+    to_date = datetime.strptime("2024-12-31", "%Y-%m-%d")
 
     for subname in sublists:
         input_file = f"./data/archived_submissions/{subname}_submissions.zst"
