@@ -244,6 +244,7 @@ def extract_subreddit_submissions(
 
     os.makedirs(csv_output_dir, exist_ok=True)
     save_year_wise_data(subreddit_data, subreddit_name, csv_output_dir)
+    
 
 
 def save_year_wise_data(subreddit_data: Dict, subreddit_name: str, output_dir: str):

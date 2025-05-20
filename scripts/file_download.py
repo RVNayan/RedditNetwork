@@ -98,6 +98,7 @@ if __name__ == "__main__":
     csv_file = "data/sublist.csv"
     df = pd.read_csv(csv_file, names=["subs"])
     subs = {sub.strip().lower() for sub in df["subs"]}
+    print("Found file ",subs)
 
     # Define torrent paths
     torrent_path = "reddit.torrent"
